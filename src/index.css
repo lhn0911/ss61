@@ -1,0 +1,137 @@
+.outer-container {
+  border: 2px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.todo-list-container {
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+.task-input-box, .task-filter-box, .task-list-box, .task-action-box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.task-input-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.task-input-box input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-error {
+  border: 1px solid red;
+}
+
+.add-task-button {
+  width: 100%;
+  padding: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-task-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.task-filter-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.filter-button {
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+
+.filter-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.task-list-box {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task-item span {
+  flex-grow: 1;
+}
+
+.edit-button, .delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.task-action-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.action-button {
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #dc3545;
+  color: white;
+}
+
+.action-button:hover {
+  background-color: #c82333;
+}
+.completed {
+  text-decoration: line-through;
+}
